@@ -1,6 +1,4 @@
-import Link from "next/link";
 import React from "react";
-import { Navbar, Nav, Button } from "react-bootstrap";
 
 const styleButton = {
   backgroundColor: "#18474D",
@@ -17,7 +15,9 @@ export default function Header() {
             className="d-flex align-items-center flex-column"
           >
             <span style={{ fontSize: "60px" }}>KNIT</span>
-            <span style={{ fontSize: "10px",marginTop:"0", paddingTop:"0" }}>Software</span>
+            <span style={{ fontSize: "10px", marginTop: "0", paddingTop: "0" }}>
+              Software
+            </span>
           </div>
         </a>
         <div className="collapse navbar-collapse d-flex justify-content-around ">
@@ -57,7 +57,7 @@ export default function Header() {
               className="btn rounded-0"
               style={{ ...styleButton, minWidth: "200px" }}
             >
-              LET'S TALK
+              LET&apos;S TALK
             </button>
           </div>
         </div>

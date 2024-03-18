@@ -46,10 +46,10 @@ export default function Home() {
       >
         <div style={{ maxWidth: "630px" }}>
           <h4>CONNECTING COMMUNITIES, BUILDING DREAMS</h4>
-          <h1>Let's Knit the Future!</h1>
+          <h1>Let&apos;s Knit the Future!</h1>
           <h5>Join Us in Weaving a Future Where Technology Unites Us All</h5>
           <p>
-            At Knit Software, we're more than just a tech company; we're a
+            At Knit Software, we&apos;re more than just a tech company; we&apos;re a
             community builder. With every line of code, we stitch together
             stronger connections, fostering an environment where businesses and
             communities thrive hand-in-hand.
@@ -58,13 +58,13 @@ export default function Home() {
             Our mission is to empower underrepresented groups in the tech space,
             bring innovative solutions to the forefront, and help your business
             tap into the heart of diverse communities. From creating dynamic web
-            applications to transforming ideas into digital fantasies, we're
+            applications to transforming ideas into digital fantasies, we&apos;re
             dedicated to making technology accessible and impactful for all.
           </p>
           <p>
-            Let's knit the future together, creating spaces where every voice is
+            Let&apos;s knit the future together, creating spaces where every voice is
             heard, and every dream can take shape. Get in touch with us today,
-            and let's start crafting a world of endless possibilities, one
+            and let&apos;s start crafting a world of endless possibilities, one
             digital thread at a time.
           </p>
 

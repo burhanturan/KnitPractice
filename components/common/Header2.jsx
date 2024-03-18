@@ -99,7 +99,7 @@ export default function Header() {
               English
             </Link>
             <button className="btn rounded-0" style={{ ...styleButton }}>
-              LET'S TALK
+              LET&apos;S TALK
             </button>
           </div>
         </div>
