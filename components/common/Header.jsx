@@ -23,6 +23,7 @@ const styleTop = {
   marginTop: "-25px",
 };
 
+
 const stylesWholeHeader = {
   backgroundColor: "#D8F0F4",
 };
