@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 //Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "@/components/common/Header";
-import Header2 from "@/components/common/Header2";
+import Footer from "@/components/common/Footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -16,9 +16,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header2 />
+        <Header />
         {children}
-
+        <Footer />
       </body>
     </html>
   );
