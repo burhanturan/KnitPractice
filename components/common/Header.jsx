@@ -76,7 +76,7 @@ export default function Header() {
             </Link>
             <Link
               className="nav-item nav-link"
-              href="/"
+              href="/whatwedo"
               style={{ color: "#18474D" }}
             >
               WHAT WE DO
