@@ -31,7 +31,7 @@ const stylesWholeHeader = {
 export default function Header() {
   return (
     <div
-      className="sticky-top container justify-content-between align-items-center "
+      className="sticky-top absolute-top position-sticky container justify-content-between align-items-center "
       style={{ ...stylesWholeHeader }}
     >
       <nav className="navbar navbar-expand-lg ">
