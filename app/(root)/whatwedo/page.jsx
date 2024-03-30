@@ -6,7 +6,6 @@ const styleFirstSection = {
     heigth: "200px",
 };
 
-
 const styleSecondSection = {
     color: "#DDE9D3",
     fontFamily: "Arial",
@@ -19,7 +18,6 @@ const styleSecondSection = {
     marginLeft: "330px",
   };
 
-
   const styleButton = {
     backgroundColor: "#dde9d3",
     color: "#012634",
@@ -30,6 +28,9 @@ const styleSecondSection = {
     marginTop: "50px",
   };
 
+  const styleH4 = {
+    fontSize: "19px",
+  }
 
 export default function WhatWeDoPage() {
   return (
@@ -45,15 +46,15 @@ export default function WhatWeDoPage() {
    style={{ color: "#102634" }}
    >
    <div style={{ maxWidth: "630px" }}>
-          <h4>EMPOWERING COMMUNITIES THROUGH DIGITAL INNOVATION</h4>
-          <h1><strong>What we do at Knit Software</strong></h1>
-          <h5><strong>We are all about making an Impact</strong></h5>
+          <h4 style={styleH4}>EMPOWERING COMMUNITIES THROUGH DIGITAL INNOVATION</h4>
+          <h1 className= "fw-bold">What we do at Knit Software</h1>
+          <h5 className= "fw-bold">We are all about making an Impact</h5>
           <p>
             At Knit Software, we&apos;re more than just a technology company; we&apos;re a catalyst for 
             positive change. Our dedication to integrating digital solutions into the fabric of 
             communities drives us forward. Here&apos;s a glimpse into our core:
           </p>
-          <h6><strong>OUR VALUES</strong></h6>
+          <h6 className= "fw-bold">OUR VALUES</h6>
           <p>
             <strong>Integrity</strong>
             <br></br>
@@ -76,11 +77,8 @@ export default function WhatWeDoPage() {
             Making technology accessible and manageable, we simplify the complex,
             ensuring a seamless experience for all.
             </p> 
-
-        
             </div>
             </div>
-           
             </div>
              
 
