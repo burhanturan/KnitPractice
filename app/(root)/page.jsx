@@ -158,7 +158,7 @@ export default function Home() {
           >
             OUR SOLUTION
           </Link>
-        </div>
+          </div>
       </div>
     </main>
   );
