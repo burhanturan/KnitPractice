@@ -169,28 +169,29 @@ export default function WhatWeDoPage() {
             your needs. Our goal? To transform your digital landscape, making
             technology work for you.
           </p>
-
-        
         </div>
       </div>
 
-      <div style={{display: "flex", justifyContent: "center", marginTop: "150px" }}>
-            <Link
-              href="/yourchallenges"
-              className="btn rounded-0"
-              style={{
-                backgroundColor: "#012634",
-                color: "#DDE9D3",
-                minWidth: "200px",
-                margin: "0 auto",
-              }}
-            >
-              WHAT WE SOLVE
-            </Link>
-          </div>
-
-
-
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "150px",
+        }}
+      >
+        <Link
+          href="/yourchallenges"
+          className="btn rounded-0"
+          style={{
+            backgroundColor: "#012634",
+            color: "#DDE9D3",
+            minWidth: "200px",
+            margin: "0 auto",
+          }}
+        >
+          WHAT WE SOLVE
+        </Link>
+      </div>
     </div>
   )
 }
