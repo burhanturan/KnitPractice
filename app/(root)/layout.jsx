@@ -4,7 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 //Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "@/components/common/Header";
+import Header from "@/components/common/Header2";
 import Footer2 from "@/components/common/Footer2";
 
 
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
+        {/* <Header /> */}
         {children}
         <Footer2 />
       </body>

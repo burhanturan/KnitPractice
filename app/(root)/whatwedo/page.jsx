@@ -1,11 +1,13 @@
-import Image from "next/image"
-import styles from "./style.css"
-import Link from "next/link"
+import Image from "next/image";
+import styles from "./style.css";
+import Link from "next/link";
+import Header from "@/components/common/Header";
+
 
 const styleFirstSection = {
   backgroundColor: "#012634",
   heigth: "200px",
-}
+};
 
 const styleSecondSection = {
   color: "#D8F0F4",
@@ -17,7 +19,7 @@ const styleSecondSection = {
   marginTop: "-100px",
   fontSize: "20px",
   marginLeft: "330px",
-}
+};
 
 const styleButton = {
   backgroundColor: "#D8F0F4",
@@ -27,15 +29,15 @@ const styleButton = {
   //marginRight: "200px",
 
   marginTop: "50px",
-}
+};
 
 const styleH4 = {
   fontSize: "19px",
-}
+};
 
 const style2 = {
   fontSize: "60px",
-}
+};
 
 export default function WhatWeDoPage() {
   return (
@@ -46,6 +48,13 @@ export default function WhatWeDoPage() {
         backgroundColor: "#EEE8E8",
       }}
     >
+      <div
+        className="sticky-top absolute-top position-sticky  justify-content-between align-items-center "
+        style={{ backgroundColor: "#EEE8E8" }}
+      >
+        <Header />
+      </div>
+
       <div
         className="  container mt-5 d-flex justify-content-between"
         style={{ color: "#102634" }}
@@ -93,6 +102,7 @@ export default function WhatWeDoPage() {
           style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center" }}
         >
           <Image
+          className="fluid d-block"
             width={610}
             height={550}
             src="/whatwedoImg.png"
@@ -169,28 +179,29 @@ export default function WhatWeDoPage() {
             your needs. Our goal? To transform your digital landscape, making
             technology work for you.
           </p>
-
-        
         </div>
       </div>
 
-      <div style={{display: "flex", justifyContent: "center", marginTop: "150px" }}>
-            <Link
-              href="/yourchallenges"
-              className="btn rounded-0"
-              style={{
-                backgroundColor: "#012634",
-                color: "#DDE9D3",
-                minWidth: "200px",
-                margin: "0 auto",
-              }}
-            >
-              WHAT WE SOLVE
-            </Link>
-          </div>
-
-
-
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "150px",
+        }}
+      >
+        <Link
+          href="/yourchallenges"
+          className="btn rounded-0"
+          style={{
+            backgroundColor: "#012634",
+            color: "#DDE9D3",
+            minWidth: "200px",
+            margin: "0 auto",
+          }}
+        >
+          WHAT WE SOLVE
+        </Link>
+      </div>
     </div>
-  )
+  );
 }
