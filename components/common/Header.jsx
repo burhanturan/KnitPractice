@@ -54,9 +54,9 @@ export default function Header() {
 
       <nav id="navbar" className="navbar">
         <ul>
-          <li><a className="nav-link " href="/">YOUR CHALLENGES</a></li>
+          <li><a className="nav-link " href="/yourchallenges">YOUR CHALLENGES</a></li>
           <li><a className="nav-link scrollto" href="/whatwedo">WHAT WE DO</a></li>
-          <li><a className="nav-link scrollto" href="#services">OUR APPROACH</a></li>
+          <li><a className="nav-link scrollto" href="ourapproach">OUR APPROACH</a></li>
           <div className="row d-flex gap-2 flex-column" style={{ marginTop: "-20px"}}>
           <li><a className="scrollto justify-content-center" style={{...styleEnglish}} href="#about">English</a></li>
           <li><a className="getstarted justify-content-center scrollto rounded-0" style={{...styleButton}} href="#about">LET'S TALK</a></li>

@@ -1,79 +1,60 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
+import Header from "@/component/common/Header"
 
-import { Button } from "react-bootstrap";
-import Header from "@/components/common/Header";
-
+const styleFirstSection = {
+  backgroundColor: "#012634",
+  heigth: "200px",
+}
 
 const styleSecondSection = {
   color: "#D8F0F4",
   fontFamily: "Arial",
   display: "inline-flex",
-  // height: "175px",
+  height: "175px",
   width: "600px",
   justifyContent: "center",
-  //marginTop: "-100px",
+  marginTop: "-10px",
   fontSize: "20px",
-  //marginLeft: "330px",
-};
+  marginLeft: "330px",
+  
+}
 
 const styleButton = {
   backgroundColor: "#D8F0F4",
   color: "#012634",
-  // marginBottom: "55px",
+  marginBottom: "10px",
   minWidth: "300px",
   //marginRight: "200px",
 
   marginTop: "50px",
-};
+}
 
 const styleH4 = {
-    fontSize: "19px",
-  }
-  
-  const style2 = {
-    fontSize: "20px",
-  }
+  fontSize: "19px",
+}
+
+const style2 = {
+  fontSize: "20px",
+}
 
 export default function YourChallenges() {
   return (
-    <main
+    <div
       className=""
       style={{
         fontFamily: "Arial",
         backgroundColor: "#FAF8E5",
-        marginBottom: "0px",
       }}
     >
+      <Header backgroundColor="#abcdef" />
       <div
-        className="sticky-top absolute-top position-sticky  justify-content-between align-items-center "
-        style={{ backgroundColor: "#FAF8E5" }}
+        className="  container mt-5 d-flex justify-content-between"
+        style={{ color: "#012634" }}
       >
-        <Header style={{ backgroundColor: "#FAF8E5" }} />
-      </div>
-
-      <section id="about" className="about">
-        <div className="container">
-          <div className="row">
-            <div
-              className="col-lg-6 order-1 order-lg-2"
-              data-aos="zoom-in"
-              data-aos-delay="150"
-            >
-              <Image
-                className="img-fluid shadow"
-                width={610}
-                height={550}
-                src="/yourchallengesImg.png"
-                alt=""
-              />
-            </div>
-            <div
-              className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
-              data-aos="fade-right"
-            >
-              <h4 style={{ ...styleH4 }}>ELEVATING BUSINESS INTO THE DIGITAL FUTURE</h4>
-              <h1 className="fw-bold">Who we serve</h1>
+        <div style={{ maxWidth: "630px" }}>
+          <h4 style={styleH4}>ELEVATING BUSINESS INTO THE DIGITAL FUTURE</h4>
+          <h1 className="fw-bold">Who we serve</h1>
           <h5 className="fw-bold">We overcome your biggest challenges</h5>
           <p>
             At Knit Software, we serve forward-thinking businesses ready to
@@ -99,58 +80,79 @@ export default function YourChallenges() {
             uptick in customer engagement and a reduction in expenses, driving
             your margins to new heights.
           </p>
-            </div>
-          </div>
         </div>
-      </section>
 
-      <section
-        id="cta"
-        className="container cta w-100"
-        style={{ backgroundColor: "#18474D" }}
-      >
-        <div data-aos="zoom-in">
-          <div className="text-center">
-            <div>
-              <p style={{ ...styleSecondSection }}>
-              Empowerment Through Innovation: Discover Our Approach
-              </p>
-            </div>
+        <div
+          className="yc"
+          style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center" }}
+        >
+          <Image
+            width={610}
+            height={550}
+            src="/yourchallengesImg.png"
+            alt=""
+            style={{
+              display: "inline-block",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          />
+        </div>
+      </div>
 
+      <div className="container">
+        <div className="row ">
+          <div
+            className="col text-center mt-5 d-flex justify-content-center align-items-center"
+            style={{ ...styleFirstSection }}
+          >
             <div>
-              <button
-                style={{ ...styleButton }}
-                className="btn rounded-0 cta-btn"
+              <span
+                className="mb-3 text-center align-items-center justify-content-center"
+                style={{ ...styleSecondSection }}
               >
-                 See how we make it happen
+                Empowerment Through Innovation: Discover Our Approach
+              </span>
+            </div>
+
+            <div
+              className=" col d-flex"
+              style={{ marginTop: "50px", marginLeft: "-420px" }}
+              
+            >
+             <Link href="/ourapproach">
+              <button
+                className="btn rounded-0 align-items-center justify-content-center"
+                style={{ ...styleButton }}
+                
+              >
+                See how we make it happen
+          
               </button>
+              </Link>
             </div>
+            
           </div>
+          
         </div>
-      </section>
+      </div>
 
-      <section id="about" className="about">
-        <div className="container">
-          <div className="row">
-            <div
-              className="col-lg-6 order-2 order-lg-1"
-              data-aos="zoom-in"
-              data-aos-delay="150"
-            >
-              <Image
-                className="img-fluid shadow"
-                width={610}
-                height={550}
-                src="/yourchallengesSecondImg.png"
-                alt=""
-              />
-            </div>
-
-            <div
-              className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
-              data-aos="fade-right"
-            >
-                 <h1 className="fw-bold" style={style2}>
+      <div
+        className="  container mt-5 d-flex justify-content-between"
+        style={{ color: "#18474D" }}
+      >
+        <div className="yc" style={{ maxWidth: "600px"}}>
+          <Image
+            className="yc"
+            width={610}
+            height={550}
+            src="/yourchallengesSecondImg.png"
+            alt=""
+          />
+        </div>
+            
+        <div style={{ maxWidth: "630px" }}>
+          <h1 className="fw-bold" style={style2}>
             ANALOG TO DIGITAL LEAP
           </h1>
           <h4 className="fw-bold" style={{ fontSize: "17px" }}>
@@ -176,11 +178,29 @@ export default function YourChallenges() {
             your needs. Our goal? To transform your digital landscape, making
             technology work for you.
           </p>
-             
-            </div>
-          </div>
         </div>
-      </section>
-    </main>
-  );
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "150px",
+        }}
+      >
+        <Link
+          href="/"
+          className="btn rounded-0"
+          style={{
+            backgroundColor: "#012634",
+            color: "#DDE9D3",
+            minWidth: "200px",
+            margin: "0 auto",
+          }}
+        >
+          LET&apos;S TALK
+        </Link>
+      </div>
+    </div>
+  )
 }
