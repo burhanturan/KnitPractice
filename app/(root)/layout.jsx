@@ -4,8 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 //Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "@/components/common/Header";
-import Footer2 from "@/components/common/Footer2";
+
 
 
 export const metadata = {
@@ -16,10 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
+      <body className={inter.className} style={{ marginTop: "-100px" }}>
         {children}
-        <Footer2 />
+        {/* <Footer /> */}
       </body>
     </html>
   );

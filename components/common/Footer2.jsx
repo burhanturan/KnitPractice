@@ -34,14 +34,14 @@ const styleContactUs = {
 };
 
 const styleSecondSection = {
-  marginLeft: "300px",
+  marginRight: "-700px",
 };
 
 // ms-5  start-50 col mt-4
 export default function Footer() {
   return (
     <div className="footer mt-5">
-      <div className=" " style={{ ...styleFooter, paddingTop: "1px" }}>
+      <div className=" " style={{ ...styleFooter,paddingTop: "1px" }}>
         <div className="container" style={{ ...styleList }}>
           <div className="row">
             <div className="col-md-5">
@@ -133,7 +133,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div style={{ ...styleSecondSection }} className="col-md-4">
+            <div style={{ ...styleSecondSection }} className="col-sm-0 col-md-4 col-lg-12 mt-5">
               <ul className="">
                 <Link
                   // style={{ ...stylesWholeHeader }}
@@ -162,7 +162,7 @@ export default function Footer() {
                   </div>
                 </Link>
 
-                <div className="container w-100">
+                <div className="container">
                   <div className="row">
                     <div className="col-md-12 ">
                       <div className=" container d-flex justify-content-center gap-4 align-items-center">
@@ -185,7 +185,7 @@ export default function Footer() {
                             color: "#ffffff",
                             display: "flex",
                             justifyContent: "center",
-                            marginTop: "10px",
+                            marginTop: "3px",
                           }}
                           className=""
                         >

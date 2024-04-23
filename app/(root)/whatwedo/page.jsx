@@ -1,70 +1,86 @@
-import Image from "next/image"
-import styles from "./style.css"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
-const styleFirstSection = {
-  backgroundColor: "#012634",
-  heigth: "200px",
-}
+import { Button } from "react-bootstrap";
+import Header from "@/components/common/Header";
 
 const styleSecondSection = {
-  color: "#D8F0F4",
+  color: "#DDE9D3",
   fontFamily: "Arial",
   display: "inline-flex",
-  height: "100px",
+  //height: "50px",
   width: "600px",
   justifyContent: "center",
-  marginTop: "-100px",
+  //marginTop: "-100px",
   fontSize: "20px",
-  marginLeft: "330px",
-}
+  //marginLeft: "330px",
+};
 
 const styleButton = {
-  backgroundColor: "#D8F0F4",
-  color: "#012634",
+  backgroundColor: "#dde9d3",
+  color: "#18474D",
   // marginBottom: "55px",
   minWidth: "200px",
   //marginRight: "200px",
 
   marginTop: "50px",
-}
-
-const styleH4 = {
-  fontSize: "19px",
-}
+};
 
 const style2 = {
   fontSize: "60px",
 }
 
-export default function WhatWeDoPage() {
+export default function Home() {
   return (
-    <div
+    <main
       className=""
       style={{
         fontFamily: "Arial",
         backgroundColor: "#EEE8E8",
+        marginBottom: "0px",
       }}
     >
       <div
-        className="  container mt-5 d-flex justify-content-between"
-        style={{ color: "#102634" }}
+        className="sticky-top absolute-top position-sticky  justify-content-between align-items-center "
+        style={{ backgroundColor: "#EEE8E8" }}
       >
-        <div style={{ maxWidth: "630px" }}>
-          <h4 style={styleH4}>
-            EMPOWERING COMMUNITIES THROUGH DIGITAL INNOVATION
-          </h4>
-          <h1 className="fw-bold">What we do at Knit Software</h1>
-          <h5 className="fw-bold">We are all about making an Impact</h5>
-          <p>
-            At Knit Software, we&apos;re more than just a technology company;
-            we&apos;re a catalyst for positive change. Our dedication to
-            integrating digital solutions into the fabric of communities drives
-            us forward. Here&apos;s a glimpse into our core:
-          </p>
-          <h6 className="fw-bold">OUR VALUES</h6>
-          <p>
-            <strong>Integrity</strong>
+        <Header style={{ backgroundColor: "#EEE8E8" }} />
+      </div>
+
+      <section id="about" className="about">
+        <div className="container">
+          <div className="row">
+            <div
+              className="col-lg-6 order-1 order-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              <Image
+                className="img-fluid shadow"
+                width={610}
+                height={550}
+                src="/whatwedoImg.png"
+                alt=""
+              />
+            </div>
+            <div
+              className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
+              data-aos="fade-right"
+            >
+              <h4>EMPOWERING COMMUNITIES THROUGH DIGITAL INNOVATION</h4>
+              <h1>What we do at Knit Software</h1>
+              <h5>
+                We are all about making an impact
+              </h5>
+              <p>
+              At Knit Software, we&apos;re more than just a technology company;
+              we&apos;re a catalyst for positive change. Our dedication to
+              integrating digital solutions into the fabric of communities drives
+              us forward. Here&apos;s a glimpse into our core:
+              </p>
+              <h6 className="fw-bold">OUR VALUES</h6>
+              <p>
+              <strong>Integrity</strong>
             <br></br>
             We believe in the power of honesty, building trust with every click.
           </p>
@@ -86,72 +102,58 @@ export default function WhatWeDoPage() {
             Making technology accessible and manageable, we simplify the
             complex, ensuring a seamless experience for all.
           </p>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div
-          className="picture"
-          style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center" }}
-        >
-          <Image
-            width={610}
-            height={550}
-            src="/whatwedoImg.png"
-            alt=""
-            style={{
-              display: "inline-block",
-              marginLeft: "auto",
-              marginRight: "auto",
-            }}
-          />
-        </div>
-      </div>
-
-      <div className="container">
-        <div className="row ">
-          <div
-            className="col text-center mt-5 d-flex justify-content-center align-items-center"
-            style={{ ...styleFirstSection }}
-          >
+      <section
+        id="cta"
+        className="container cta w-100"
+        style={{ backgroundColor: "#012634" }}
+      >
+        <div data-aos="zoom-in">
+          <div className="text-center">
             <div>
-              <span
-                className="mb-3 text-center align-items-center justify-content-center"
-                style={{ ...styleSecondSection }}
-              >
+              <p style={{ ...styleSecondSection }}>
                 Empowerment Through Innovation: Discover Our Approach
-              </span>
+              </p>
             </div>
 
-            <div
-              className=" col d-flex"
-              style={{ marginTop: "50px", marginLeft: "-420px" }}
-            >
+            <div>
               <button
-                className="btn rounded-0 align-items-center justify-content-center"
                 style={{ ...styleButton }}
+                className="btn rounded-0 cta-btn"
               >
                 See how we make it happen
               </button>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div
-        className="  container mt-5 d-flex justify-content-between"
-        style={{ color: "#18474D" }}
-      >
-        <div className="picture" style={{ maxWidth: "600px" }}>
-          <Image
-            className="picture"
-            width={610}
-            height={550}
-            src="/whatwedoSecondImg.png"
-            alt=""
-          />
-        </div>
+      <section id="about" className="about">
+        <div className="container">
+          <div className="row">
+            <div
+              className="col-lg-6 order-2 order-lg-1"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              <Image
+                className="img-fluid shadow"
+                width={610}
+                height={550}
+                src="/whatwedoSecondImg.png"
+                alt=""
+              />
+            </div>
 
-        <div style={{ maxWidth: "630px" }}>
-          <h1 style={style2}>Our Mission</h1>
+            <div
+              className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
+              data-aos="fade-right"
+            >
+            <h1 style={style2}>Our Mission</h1>
           <h4 className="fw-bold" style={{ fontSize: "20px" }}>
             "To weave a digital future where every connection counts"
           </h4>
@@ -168,30 +170,23 @@ export default function WhatWeDoPage() {
             digital solutions for small businesses, we tailor technology to fit
             your needs. Our goal? To transform your digital landscape, making
             technology work for you.
-          </p>
+              </p>
+              <Link
+                href="/"
+                className="btn rounded-0"
+                style={{
+                  backgroundColor: "#18474D",
+                  color: "#DDE9D3",
+                  minWidth: "200px",
+                  marginTop: "60px",
+                }}
+              >
+                WHAT WE SOLVE
+              </Link>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          marginTop: "150px",
-        }}
-      >
-        <Link
-          href="/yourchallenges"
-          className="btn rounded-0"
-          style={{
-            backgroundColor: "#012634",
-            color: "#DDE9D3",
-            minWidth: "200px",
-            margin: "0 auto",
-          }}
-        >
-          WHAT WE SOLVE
-        </Link>
-      </div>
-    </div>
-  )
+      </section>
+    </main>
+  );
 }
