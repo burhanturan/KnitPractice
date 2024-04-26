@@ -1,127 +1,116 @@
-import Link from "next/link";
 
-const styleFooter = {
+import React from "react";
+
+
+import { TbLetterX } from "react-icons/tb";
+
+const stylesWholeFooter = {
   backgroundColor: "#0c2543",
+};
+
+const styleHeader = {
   color: "#ffffff",
-  fontSize: "15px",
-  fontFamily: "Arial",
-  minHeight: "340px",
+  fontSize: "60px",
+  fontFamily: "Fredoka One",
+  marginBottom: "45px",
 };
 
-const styleList = {
-  marginTop: "70px",
-};
-
-const styleSecondList = {
-  marginTop: "122px",
-  marginLeft: "-400px",
-}
-
-// ms-5  start-50 col mt-4
-export default function Footer() {
+const footer = () => {
   return (
-    <div className="footer mt-5">
-      <div className=" " style={{ ...styleFooter, paddingTop: "2px" }}>
-        <div className="row">
-          <div className="align-start ms-5 col-md-5">
-            <ul
-              style={{ ...styleList }}
-              className=" "
-            >
-              <li className="mb-3 list-unstyled list-group-item">
-                <Link
-                  href="/"
-                  className=" text-decoration-none text-white align-start ms-5 fs-4 fw-bold"
-                >
-                  KNIT SOFTWARE
-                </Link>
+    <footer className="footer" style={{ ...stylesWholeFooter }}>
+      <div className="container">
+        <div className="row gy-4">
+          <div className="col-lg-2 col-6 footer-links">
+            <h4>KNIT SOFTWARE</h4>
+            <ul>
+              <li>
+                <a href="#">Home</a>
               </li>
-              <li className="mb-3  list-unstyled list-group-item">
-                <Link
-                  className="text-decoration-none ms-5 text-white"
-                  href="/"
-                  title="Go To What we do"
-                >
-                  About Us
-                </Link>
+              <li>
+                <a href="#">About us</a>
               </li>
-              <li className="mb-3 list-unstyled list-group-item">
-                <Link
-                  className="text-decoration-none ms-5 text-white"
-                  href="/"
-                  title="Go To What we do"
-                >
-                  Our Clients
-                </Link>
+              <li>
+                <a href="#">Services</a>
               </li>
-              <li className="mb-3 list-unstyled list-group-item">
-                <Link
-                  className="text-decoration-none ms-5 text-white"
-                  href="/"
-                  title="Go To What we do"
-                >
-                  Our Products
-                </Link>
+              <li>
+                <a href="#">Terms of service</a>
               </li>
-              <li className="mb-3 list-unstyled list-group-item">
-                <Link
-                  className="text-decoration-none ms-5 text-white"
-                  href="/"
-                  title="Go To What we do"
-                >
-                  Contact
-                </Link>
-              </li>
-              <li className="mb-3 list-unstyled list-group-item">
-                <Link
-                  className="text-decoration-none ms-5 text-white"
-                  href="/"
-                  title="Go To What we do"
-                >
-                  Careers
-                </Link>
+              <li>
+                <a href="#">Privacy policy</a>
               </li>
             </ul>
           </div>
 
-          <div style={{ ...styleSecondList }} className="col-md-3">
-            <ul className="text-white">
-              <li className="mb-3 list-unstyled list-group-item">
-                <Link
-                  className="text-decoration-none ms-5 text-white"
-                  href="/"
-                  title="Go To What we do"
-                >
-                  Terms of Service
-                </Link>
+          <div className="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li>
+                <a href="#">Web Design</a>
               </li>
-              <li className="mb-3 list-unstyled list-group-item">
-                <Link
-                  className="text-decoration-none ms-5 text-white"
-                  href="/"
-                  title="Go To What we do"
-                >
-                  Privacy Policy
-                </Link>
+              <li>
+                <a href="#">Web Development</a>
               </li>
-              <li className="mb-3 list-unstyled list-group-item">
-                <Link
-                  className="text-decoration-none ms-5 text-white"
-                  href="/"
-                  title="Go To What we do"
-                >
-                  Cookie Policy
-                </Link>
+              <li>
+                <a href="#">Product Management</a>
               </li>
             </ul>
           </div>
-        </div>
-        <div className="mt-4 ms-3">
-          <p className="align-start fs-6">
-            KnitSoftware.com © 2022 All Rights Reserved.
-          </p>
+
+          <div className="col-lg-5 col-md-12 d-flex  flex-column footer-info align-items-end ">
+            <a href="/" className="logo d-flex align-items-center">
+              <div className="w-100 d-flex align-items-center flex-column mb-0">
+                <span
+                  style={{
+                    ...styleHeader,
+                  }}
+                >
+                  <b>KNIT</b>
+                </span>
+
+                <span
+                  style={{
+                    color: "#ffffff",
+                    fontSize: "19px",
+                    fontFamily: "Fredoka One",
+                  }}
+                >
+                  <b>software</b>
+                </span>
+              </div>
+            </a>
+
+            <div className="social-links d-flex align-items-end mt-4">
+              <a href="#">
+                <TbLetterX />
+              </a>
+              <a href="#">
+                <TbLetterX />
+              </a>
+              <a href="#">
+                <TbLetterX />
+              </a>
+              <a href="#">
+                <TbLetterX />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
+      <div className="container mt-4">
+        <div className="copyright">
+          &copy; Copyright{" "}
+          <strong>
+            <span>Logis</span>
+          </strong>
+          . All Rights Reserved
+        </div>
+        <div className="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
   );
-}
+};
+
+export default footer;
