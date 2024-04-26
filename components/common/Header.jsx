@@ -24,6 +24,9 @@ export default function Header() {
 
     <header style={{ height: "150px" }} id="header" className=" container fixed-top position-sticky">
     <div  className=" d-flex align-items-center justify-content-between">
+    {/* <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> */}
       <h1 className="logo">        <Link
           // style={{ ...stylesWholeHeader }}
           className="navbar-brand"

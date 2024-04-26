@@ -4,6 +4,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 //Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "@/components/common/Footer";
+
 
 
 
@@ -17,7 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className} style={{ marginTop: "-100px" }}>
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
