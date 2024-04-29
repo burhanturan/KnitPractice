@@ -60,12 +60,12 @@ a:hover {
   font-weight: 700;
   letter-spacing: 1px;
   color: #fff;
-
+  
 }
 
 .footer .footer-info p {
   font-size: 14px;
-
+  
 }
 
 .footer .social-links a {
@@ -104,11 +104,11 @@ a:hover {
   margin: 0;
 }
 
-.footer .footer-links ul i {
+ .footer .footer-links ul i {
   padding-right: 2px;
   color: rgba(13, 66, 255, 0.8);
   font-size: 12px;
-  line-height: 0px;
+  line-height: 0;
 }
 
 .footer .footer-links ul li {
@@ -218,10 +218,6 @@ a:hover {
   border: 2px solid rgba(0, 0, 0, 0.5);
 }
 
-/**
-* Mobile Navigation 
-*/
-
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -319,8 +315,6 @@ a:hover {
   display: block;
 }
 
-
-
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -402,3 +396,4 @@ a:hover {
   padding: 5px 25px;
   border-radius: 25px;
 }
+
