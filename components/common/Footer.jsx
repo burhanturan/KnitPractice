@@ -1,6 +1,4 @@
-
 import React from "react";
-
 
 import { TbLetterX } from "react-icons/tb";
 
@@ -21,37 +19,56 @@ const footer = () => {
       <div className="container">
         <div className="row gy-4">
           <div className="col-lg-2 col-6 footer-links">
-            <h4>KNIT SOFTWARE</h4>
+            <h4 className="fs-5 ">KNIT SOFTWARE</h4>
             <ul>
-              <li>
-                <a href="#">Home</a>
+              <li className="mb-3">
+                <a href="#" className="text-decoration-none text-white fs-5 mt-2">
+                  About us
+                </a>
+              </li>
+              <li className="mb-3">
+                <a href="#" className="text-decoration-none text-white fs-5">
+                  Our Clients
+                </a>
+              </li>
+              <li className="mb-3">
+                <a href="#" className="text-decoration-none text-white fs-5 mt-2">
+                  Our Products
+                </a>
+              </li>
+              <li className="mb-3">
+                <a href="#" className="text-decoration-none text-white fs-5 mt-2">
+                  Contact
+                </a>
               </li>
               <li>
-                <a href="#">About us</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Terms of service</a>
-              </li>
-              <li>
-                <a href="#">Privacy policy</a>
+                <a href="#" className="text-decoration-none text-white fs-5 mt-2">
+                  Careers
+                </a>
               </li>
             </ul>
           </div>
 
-          <div className="col-lg-2 col-6 footer-links">
-            <h4>Our Services</h4>
+          <div
+            className="col-lg-2 col-6 footer-links"
+            style={{ marginTop: "68px" }}
+          >
+            {/* <h4>Our Services</h4> */}
             <ul>
-              <li>
-                <a href="#">Web Design</a>
+              <li className="mb-3">
+                <a href="#" className="text-decoration-none text-white fs-5">
+                  Terms of Service
+                </a>
               </li>
-              <li>
-                <a href="#">Web Development</a>
+              <li className="mb-3">
+                <a href="#" className="text-decoration-none text-white fs-5">
+                  Privacy Policy
+                </a>
               </li>
-              <li>
-                <a href="#">Product Management</a>
+              <li >
+                <a href="#" className="text-decoration-none text-white fs-5">
+                  Cookie Policy
+                </a>
               </li>
             </ul>
           </div>
@@ -97,16 +114,9 @@ const footer = () => {
         </div>
       </div>
 
-      <div className="container mt-4">
+      <div className="mt-0" style={{marginLeft: "55px", marginRight: "auto"}}>
         <div className="copyright">
-          &copy; Copyright{" "}
-          <strong>
-            <span>Logis</span>
-          </strong>
-          . All Rights Reserved
-        </div>
-        <div className="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          <span>KnitSoftware.com &copy; 2024. All rights reserved</span>
         </div>
       </div>
     </footer>
