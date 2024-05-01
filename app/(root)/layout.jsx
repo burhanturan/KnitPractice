@@ -4,15 +4,15 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 //Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from "@/components/common/Footer";
+import Footer from "@/components/common/Footer2";
 
 export const metadata = {
-  title:  "KNIT Software",
+  title: "KNIT Software",
   description: "KNIT Software",
   icons: {
-    icon: ['/favicon.ico?v=1'],
-    apple: ['/apple-touch-icon.png?v=2'],
-    shortcut: ['/apple-touch-icon.png']
+    icon: ["/favicon.ico?v=1"],
+    apple: ["/apple-touch-icon.png?v=2"],
+    shortcut: ["/apple-touch-icon.png"],
   },
 };
 

@@ -1,48 +1,79 @@
+import { Fredoka } from "next/font/google";
+import Link from "next/link";
 import React from "react";
 
 import { TbLetterX } from "react-icons/tb";
+const fredoka = Fredoka({ weight: "500", subsets: ["latin"] });
 
 const stylesWholeFooter = {
   backgroundColor: "#0c2543",
 };
 
-const styleHeader = {
+const styleKnit = {
+  float: "right",
   color: "#ffffff",
   fontSize: "60px",
-  fontFamily: "Fredoka One",
   marginBottom: "45px",
+};
+
+const styleSoftware = {
+  color: "#ffffff",
+  fontSize: "19px",
+  fontFamily: "arial",
+  marginTop: "-55px",
 };
 
 const footer = () => {
   return (
     <footer className="footer" style={{ ...stylesWholeFooter }}>
-      <div className="container">
+      <div className="container justify-content-end">
         <div className="row gy-4">
+
           <div className="col-lg-2 col-6 footer-links">
-            <h4 className="fs-5 ">KNIT SOFTWARE</h4>
+            {/* <h4 className="fs-5 text-white">KNIT SOFTWARE</h4> */}
             <ul>
-              <li className="mb-3">
-                <a href="#" className="text-decoration-none text-white fs-5 mt-2">
+              <li className="mb-1">
+                <a
+                  href="#"
+                  className="text-decoration-none text-white fs-5 mt-1 fw-bold"
+                >
+                  KNIT SOFTWARE
+                </a>
+              </li>
+              <li className="mb-1">
+                <a
+                  href="#"
+                  className="text-decoration-none text-white fs-5 mt-1"
+                >
                   About us
                 </a>
               </li>
-              <li className="mb-3">
+              <li className="mb-1">
                 <a href="#" className="text-decoration-none text-white fs-5">
                   Our Clients
                 </a>
               </li>
-              <li className="mb-3">
-                <a href="#" className="text-decoration-none text-white fs-5 mt-2">
+              <li className="mb-1">
+                <a
+                  href="#"
+                  className="text-decoration-none text-white fs-5 mt-2"
+                >
                   Our Products
                 </a>
               </li>
-              <li className="mb-3">
-                <a href="#" className="text-decoration-none text-white fs-5 mt-2">
+              <li className="mb-1">
+                <a
+                  href="#"
+                  className="text-decoration-none text-white fs-5 mt-2"
+                >
                   Contact
                 </a>
               </li>
               <li>
-                <a href="#" className="text-decoration-none text-white fs-5 mt-2">
+                <a
+                  href="#"
+                  className="text-decoration-none text-white fs-5 mt-2"
+                >
                   Careers
                 </a>
               </li>
@@ -51,9 +82,8 @@ const footer = () => {
 
           <div
             className="col-lg-2 col-6 footer-links"
-            style={{ marginTop: "68px" }}
+            style={{ marginTop: "80px" }}
           >
-            {/* <h4>Our Services</h4> */}
             <ul>
               <li className="mb-3">
                 <a href="#" className="text-decoration-none text-white fs-5">
@@ -65,7 +95,7 @@ const footer = () => {
                   Privacy Policy
                 </a>
               </li>
-              <li >
+              <li>
                 <a href="#" className="text-decoration-none text-white fs-5">
                   Cookie Policy
                 </a>
@@ -73,49 +103,58 @@ const footer = () => {
             </ul>
           </div>
 
-          <div className="col-lg-5 col-md-12 d-flex  flex-column footer-info align-items-end ">
-            <a href="/" className="logo d-flex align-items-center">
-              <div className="w-100 d-flex align-items-center flex-column mb-0">
-                <span
-                  style={{
-                    ...styleHeader,
-                  }}
-                >
-                  <b>KNIT</b>
-                </span>
+          <div
+            className=" col-lg-5 col-md-12 d-flex flex-column align-items-end justify-content-start"
+            style={{ float: "right" }}
+          >
 
-                <span
-                  style={{
-                    color: "#ffffff",
-                    fontSize: "19px",
-                    fontFamily: "Fredoka One",
-                  }}
-                >
-                  <b>software</b>
-                </span>
+            <h1 className="logo">
+              <Link className="navbar-brand" href="/">
+                <div className="d-flex align-items-center flex-column mb-0">
+                  <span
+                    style={{
+                      ...styleKnit,
+                    }}
+                    className={fredoka.className}
+                  >
+                    <strong>KNIT</strong>
+                  </span>
+
+                  <span
+                    style={{
+                      ...styleSoftware,
+                    }}
+                  >
+                    software
+                  </span>
+                </div>
+              </Link>
+            </h1>
+
+            <div className="row social-links d-flex align-items-center justify-content-center mt-4">
+              <a href="#">
+                <TbLetterX style={{ color: "#ffffff" }} />
+              </a>
+              <a href="#">
+                <TbLetterX style={{ color: "#ffffff" }} />
+              </a>
+              <a href="#">
+                <TbLetterX style={{ color: "#ffffff" }} />
+              </a>
+              <a href="#">
+                <TbLetterX style={{ color: "#ffffff" }} />
+              </a>
+              <div>
+                <span>Socials</span>
               </div>
-            </a>
-
-            <div className="social-links d-flex align-items-end mt-4">
-              <a href="#">
-                <TbLetterX />
-              </a>
-              <a href="#">
-                <TbLetterX />
-              </a>
-              <a href="#">
-                <TbLetterX />
-              </a>
-              <a href="#">
-                <TbLetterX />
-              </a>
             </div>
           </div>
+          
         </div>
       </div>
 
-      <div className="mt-0" style={{marginLeft: "55px", marginRight: "auto"}}>
-        <div className="copyright">
+      <div className="mt-0" style={{ marginLeft: "55px", marginRight: "auto" }}>
+        <div className=" text-start text-white ">
           <span>KnitSoftware.com &copy; 2024. All rights reserved</span>
         </div>
       </div>

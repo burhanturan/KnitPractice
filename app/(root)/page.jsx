@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Button } from "react-bootstrap";
-import Header from "@/components/common/Header";
+import Header from "@/components/common/Header2";
 
 const styleFirstSection = {
   backgroundColor: "#18474D",

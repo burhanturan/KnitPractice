@@ -1,226 +1,181 @@
-import Link from "next/link";
+import { FaTwitter } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { TbLetterX } from "react-icons/tb";
 import { TbSquareLetterX } from "react-icons/tb";
 
-const styleFooter = {
-  backgroundColor: "#0c2543",
-  color: "#ffffff",
-  fontSize: "15px",
-  fontFamily: "Arial",
-  minHeight: "300px",
-};
+import Link from "next/link";
+import { Fredoka } from "next/font/google";
 
-const styleList = {
-  marginTop: "50px",
-  marginLeft: "50px",
-};
+const fredoka = Fredoka({ weight: "500", subsets: ["latin"] });
 
-const styleSecondList = {
-  marginTop: "50px",
-  marginLeft: "-300px",
-};
-
-const styleHeader = {
+const styleKnit = {
+  float: "right",
   color: "#ffffff",
   fontSize: "60px",
-  fontFamily: "Arial",
-  marginBottom: "-25px",
 };
 
-const styleContactUs = {
-  width: "200px",
-  backgroundColor: "#18474D",
+const styleSoftware = {
   color: "#ffffff",
-  marginTop: "30px",
+  fontSize: "19px",
+  fontFamily: "arial",
+  marginTop: "-10px",
 };
 
-const styleSecondSection = {
-  marginRight: "-700px",
-};
-
-// ms-5  start-50 col mt-4
 export default function Footer() {
   return (
-    <div className="footer mt-5">
-      <div className=" " style={{ ...styleFooter,paddingTop: "1px" }}>
-        <div className="container" style={{ ...styleList }}>
-          <div className="row">
-            <div className="col-md-5">
-              <ul>
-                <li className="mb-3 list-unstyled list-group-item">
-                  <Link
-                    href="/"
-                    className=" text-decoration-none text-white align-start ms-5 fs-4 fw-bold"
-                    title="Go To Home"
-                  >
+    <div className="">
+      <footer
+        className="text-center text-lg-start text-white"
+        style={{ background: "#0c2543" }}
+      >
+        <section
+          className="he d-flex justify-content-between p-4"
+          style={{ background: "#0c2543", height: "0px" }}
+        ></section>
+
+        <section className="" style={{ marginTop: "-50px" }}>
+          <div className="container text-center text-md-start mt-5">
+            <div className="row mt-3">
+              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 className="text-uppercase fw-bold ">
+                  <Link href="/" className="text-white text-decoration-none">
                     KNIT SOFTWARE
                   </Link>
-                </li>
-                <li className="mb-3  list-unstyled list-group-item">
-                  <Link
-                    className="text-decoration-none ms-5 text-white"
-                    href="/"
-                    title="Go To What we do"
-                  >
+                </h6>
+                <p>
+                  <a href="/whatwedo" className="text-white text-decoration-none">
                     About Us
-                  </Link>
-                </li>
-                <li className="mb-3 list-unstyled list-group-item">
-                  <Link
-                    className="text-decoration-none ms-5 text-white"
-                    href="/"
-                    title="Go Your Challenges"
-                  >
+                  </a>
+                </p>
+                <p>
+                  <a href="/yourchallenges" className="text-white text-decoration-none">
                     Our Clients
-                  </Link>
-                </li>
-                <li className="mb-3 list-unstyled list-group-item">
-                  <Link
-                    className="text-decoration-none ms-5 text-white"
-                    href="/"
-                    title="Go To What we do"
-                  >
+                  </a>
+                </p>
+                <p>
+                  <a href="/whatwedo" className="text-white text-decoration-none">
                     Our Products
-                  </Link>
-                </li>
-                <li className="mb-3 list-unstyled list-group-item">
-                  <Link
-                    className="text-decoration-none ms-5 text-white"
-                    href="/"
-                    title="Go To What we do"
-                  >
+                  </a>
+                </p>
+                <p>
+                  <a href="/letstalk" className="text-white text-decoration-none">
                     Contact
-                  </Link>
-                </li>
-                <li className="mb-3 list-unstyled list-group-item">
-                  <Link
-                    className="text-decoration-none ms-5 text-white"
-                    href="/"
-                    title="Go To Lets Talk"
-                  >
+                  </a>
+                </p>
+                <p>
+                  <a href="/letstalk" className="text-white text-decoration-none">
                     Careers
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="col-md-3" style={{ ...styleSecondList }}>
-              <ul>
-                <li className="mb-3 list-unstyled list-group-item">
-                  <Link
-                    className="text-decoration-none ms-5 text-white"
-                    href="/"
-                    title="Go To What we do"
-                  >
+                  </a>
+                </p>
+              </div>
+
+              <div
+                className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"
+                style={{ paddingLeft: "-45px" }}
+              >
+                <h6 className=" fw-bold">Usefull Links</h6>
+
+                <p>
+                  <a href="#" className="text-white text-decoration-none">
                     Terms of Service
-                  </Link>
-                </li>
-                <li className="mb-3 list-unstyled list-group-item">
-                  <Link
-                    className="text-decoration-none ms-5 text-white"
-                    href="/"
-                    title="Go To What we do"
-                  >
+                  </a>
+                </p>
+                <p>
+                  <a href="#" className="text-white text-decoration-none">
                     Privacy Policy
-                  </Link>
-                </li>
-                <li className="mb-3 list-unstyled list-group-item">
-                  <Link
-                    className="text-decoration-none ms-5 text-white"
-                    href="/"
-                    title="Go To What we do"
-                  >
+                  </a>
+                </p>
+                <p>
+                  <a href="#" className="text-white text-decoration-none">
                     Cookie Policy
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div style={{ ...styleSecondSection }} className="col-sm-0 col-md-4 col-lg-12 mt-5">
-              <ul className="">
-                <Link
-                  // style={{ ...stylesWholeHeader }}
-                  className="navbar-brand"
-                  href="/"
-                >
-                  <div className="w-100 d-flex align-items-center flex-column mb-0">
-                    <span
-                      style={{
-                        ...styleHeader,
-                      }}
-                    >
-                      <b>KNIT</b>
-                    </span>
-
-                    <span
-                      style={{
-                        color: "#ffffff",
-                        fontSize: "19px",
-                        marginTop: "-10",
-                        fontFamily: "Fredoka One",
-                      }}
-                    >
-                      <b>software</b>
-                    </span>
-                  </div>
-                </Link>
-
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-12 ">
-                      <div className=" container d-flex justify-content-center gap-4 align-items-center">
-                        <Link className="fs-1 text-white" href={"/"}>
-                          <TbSquareLetterX />
-                        </Link>
-                        <Link className="fs-1 text-white" href={"/"}>
-                          <TbSquareLetterX />
-                        </Link>
-                        <Link className="fs-1 text-white" href={"/"}>
-                          <TbSquareLetterX />
-                        </Link>
-                        <Link className="fs-1 text-white" href={"/"}>
-                          <TbSquareLetterX />
-                        </Link>
-                      </div>
-                      <div>
-                        <p
-                          style={{
-                            color: "#ffffff",
-                            display: "flex",
-                            justifyContent: "center",
-                            marginTop: "3px",
-                          }}
-                          className=""
-                        >
-                          Socials
-                        </p>
-                      </div>
-
-                      <div
-                        style={{ ...styleContactUs }}
-                        className="container d-flex justify-content-center align-items-center"
+                  </a>
+                </p>
+              </div>
+              <div
+                className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"
+                style={{ marginTop: "-15px" }}
+              >
+                <h1 className="logo">
+                  <Link className="navbar-brand" href="/">
+                    <div className="d-flex align-items-center flex-column">
+                      <span
+                        style={{
+                          ...styleKnit,
+                        }}
+                        className={fredoka.className}
                       >
-                        <Link
-                          href="/"
-                          className="btn rounded-0"
-                          style={{
-                            color: "#ffffff",
-                            gap: "40px",
-                          }}
-                        >
-                          CONTACT US
-                        </Link>
-                      </div>
+                        <strong>KNIT</strong>
+                      </span>
+
+                      <span
+                        style={{
+                          ...styleSoftware,
+                        }}
+                      >
+                        software
+                      </span>
                     </div>
-                  </div>
+                  </Link>
+                </h1>
+
+                <div
+                  className="col fs-1 gap-3 d-flex justify-content-center align-items-center"
+                  style={{ marginTop: "15px" }}
+                >
+                  <Link href="/" className="text-white">
+                    <TbSquareLetterX />
+                  </Link>
+                  <Link href="/" className="text-white">
+                    <TbSquareLetterX />
+                  </Link>
+                  <Link href="/" className="text-white">
+                    <TbSquareLetterX />
+                  </Link>
+                  <Link href="/" className="text-white">
+                    <TbSquareLetterX />
+                  </Link>
+
+                  {/* <FaTwitter />
+                  <FaLinkedin />
+                  <FaInstagramSquare />
+                  <FcGoogle /> */}
                 </div>
-              </ul>
+                <p className="d-flex justify-content-center align-items-center">
+                  Socials
+                </p>
+                <div
+                  className=" d-flex justify-content-center align-items-center"
+                  style={{ marginTop: "15px" }}
+                >
+                  <Link
+                    href="/"
+                    className="btn rounded-0"
+                    style={{
+                      backgroundColor: "#18474D",
+                      color: "#DDE9D3",
+                      width: "150px",
+                      marginTop: "10px",
+                    }}
+                  >
+                    CONTACT US
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
+
+        <div className="text-start p-3" style={{ backgroundColor: "#0c2543",fontSize:"13px" }}>
+          <Link href="/" className="text-white text-decoration-none">
+            KnitSoftware.com
+          </Link>
+          © 2024 All Rights reserved.
         </div>
-        <div className="mt-4 ms-3">
-          <p className="align-start fs-6">
-            KnitSoftware.com © 2022 All Rights Reserved.
-          </p>
-        </div>
-      </div>
+      </footer>
     </div>
   );
 }
