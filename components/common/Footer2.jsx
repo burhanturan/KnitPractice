@@ -126,7 +126,10 @@ export default function Footer() {
                   className="col fs-1 gap-3 d-flex justify-content-center align-items-center"
                   style={{ marginTop: "15px" }}
                 >
-                  <Link href="/" className="text-white">
+                  {/* <Link href="/" className="text-white">
+                    <TbSquareLetterX />
+                  </Link> */}
+                  {/* <Link href="/" className="text-white">
                     <TbSquareLetterX />
                   </Link>
                   <Link href="/" className="text-white">
@@ -134,15 +137,13 @@ export default function Footer() {
                   </Link>
                   <Link href="/" className="text-white">
                     <TbSquareLetterX />
-                  </Link>
-                  <Link href="/" className="text-white">
-                    <TbSquareLetterX />
-                  </Link>
+                  </Link> */}
 
-                  {/* <FaTwitter />
+                  <FaTwitter />
                   <FaLinkedin />
                   <FaInstagramSquare />
-                  <FcGoogle /> */}
+                  <FcGoogle />
+                  <FaGithub />
                 </div>
                 <p className="d-flex justify-content-center align-items-center">
                   Socials
