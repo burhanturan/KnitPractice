@@ -19,8 +19,9 @@ const styleSoftware = {
 const styleButton = {
   backgroundColor: "#18474D",
   color: "#DDE9D3",
-  marginBottom: "30px",
+  marginBottom: "33px",
   minWidth: "150px",
+  border: "none",
 };
 
 const styleEnglish = {
@@ -67,17 +68,17 @@ export default function Header() {
 
           <ul className="justify-content-center">
             <li>
-              <a className="nav-link " href="/yourchallenges">
+              <a className="nav-link " href="/yourchallenges" style={{color: "#18474D"}}>
                 YOUR CHALLENGES
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="/whatwedo">
+              <a className="nav-link scrollto" href="/whatwedo" style={{color: "#18474D"}}>
                 WHAT WE DO
               </a>
             </li>
             <li>
-              <a className="nav-link scrollto" href="ourapproach">
+              <a className="nav-link scrollto" href="ourapproach" style={{color: "#18474D"}}>
                 OUR APPROACH
               </a>
             </li>
