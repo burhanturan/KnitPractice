@@ -25,6 +25,16 @@ const styleSoftware = {
   marginTop: "-10px",
 };
 
+const styleSecond = {
+  
+
+  //display: "flex",
+  //marginRight: "100px",
+  marginLeft: "-100px",
+  //margin: "10px",
+  //paddingRight: "10px",
+}
+
 export default function Footer() {
   return (
     <div className="">
@@ -33,52 +43,69 @@ export default function Footer() {
         style={{ background: "#0c2543" }}
       >
         <section
-          className="he d-flex justify-content-between p-4"
+          className="d-flex justify-content-between p-4"
           style={{ background: "#0c2543", height: "0px" }}
         ></section>
 
         <section className="" style={{ marginTop: "-50px" }}>
-          <div className="container text-center text-md-start mt-5">
-            <div className="row mt-3">
-              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div className="container flex text-center text-md-start mt-5">
+            <div className="flex row mt-3" style={{}}>
+              <div
+                className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4"
+                style={{ paddingLeft: "" }}
+              >
                 <h6 className="text-uppercase fw-bold ">
                   <Link href="/" className="text-white text-decoration-none">
                     KNIT SOFTWARE
                   </Link>
                 </h6>
                 <p>
-                  <a href="/whatwedo" className="text-white text-decoration-none">
+                  <a
+                    href="/whatwedo"
+                    className="text-white text-decoration-none"
+                  >
                     About Us
                   </a>
                 </p>
                 <p>
-                  <a href="/yourchallenges" className="text-white text-decoration-none">
+                  <a
+                    href="/yourchallenges"
+                    className="text-white text-decoration-none"
+                  >
                     Our Clients
                   </a>
                 </p>
                 <p>
-                  <a href="/whatwedo" className="text-white text-decoration-none">
+                  <a
+                    href="/whatwedo"
+                    className="text-white text-decoration-none"
+                  >
                     Our Products
                   </a>
                 </p>
                 <p>
-                  <a href="/letstalk" className="text-white text-decoration-none">
+                  <a
+                    href="/letstalk"
+                    className="text-white text-decoration-none"
+                  >
                     Contact
                   </a>
                 </p>
                 <p>
-                  <a href="/letstalk" className="text-white text-decoration-none">
+                  <a
+                    href="/letstalk"
+                    className="text-white text-decoration-none"
+                  >
                     Careers
                   </a>
                 </p>
               </div>
 
               <div
-                className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"
-                style={{ paddingLeft: "-45px" }}
+                className="col-4 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"
+                style={{ ...styleSecond }}
               >
-                <h6 className=" fw-bold">Usefull Links</h6>
-
+                <br />
                 <p>
                   <a href="#" className="text-white text-decoration-none">
                     Terms of Service
@@ -95,6 +122,7 @@ export default function Footer() {
                   </a>
                 </p>
               </div>
+
               <div
                 className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"
                 style={{ marginTop: "-15px" }}
@@ -126,24 +154,16 @@ export default function Footer() {
                   className="col fs-1 gap-3 d-flex justify-content-center align-items-center"
                   style={{ marginTop: "15px" }}
                 >
-                  {/* <Link href="/" className="text-white">
-                    <TbSquareLetterX />
-                  </Link> */}
-                  {/* <Link href="/" className="text-white">
-                    <TbSquareLetterX />
-                  </Link>
-                  <Link href="/" className="text-white">
-                    <TbSquareLetterX />
-                  </Link>
-                  <Link href="/" className="text-white">
-                    <TbSquareLetterX />
-                  </Link> */}
-
-                  <FaTwitter />
-                  <FaLinkedin />
-                  <FaInstagramSquare />
-                  <FcGoogle />
-                  <FaGithub />
+                  <Link href="/" className="text-white"><TbSquareLetterX /></Link>
+                  <Link href="/" className="text-white"><TbSquareLetterX /></Link>
+                  <Link href="/" className="text-white"><TbSquareLetterX /></Link>
+                  <Link href="/" className="text-white"><TbSquareLetterX /></Link>
+                  {/* <FaFacebook icon="fa-brands fa-facebook-f" />
+                  <FaTwitter icon="fa-brands fa-FaTwitter-f" /> */}
+                  {/* <FontAwesomeIcon icon="fa-solid fa-x" /> */}
+                  {/* <FontAwesomeIcon icon="fa-solid fa-x" /> */}
+                  {/* <FaInstagramSquare />
+                  <FcGoogle /> */}
                 </div>
                 <p className="d-flex justify-content-center align-items-center">
                   Socials
@@ -170,7 +190,10 @@ export default function Footer() {
           </div>
         </section>
 
-        <div className="text-start p-3" style={{ backgroundColor: "#0c2543",fontSize:"13px" }}>
+        <div
+          className="text-start p-3"
+          style={{ backgroundColor: "#0c2543", fontSize: "13px" }}
+        >
           <Link href="/" className="text-white text-decoration-none">
             KnitSoftware.com
           </Link>
